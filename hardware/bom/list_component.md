@@ -3,7 +3,7 @@
 | Komponen | Jumlah |
 | :--- | :--- |
 | **Arduino Uno** | 1 |
-| **Sensor DHT22** (Warna Putih) | 1 |
+| **Sensor DHT22** (White color one) | 1 |
 | **LCD 20x4 I2C Adapter** | 1 |
 | **Relay Module 1-Channel** | 1 |
 | **Breadboard 400 pts** | 1 |
