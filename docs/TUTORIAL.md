@@ -6,7 +6,7 @@ Panduan langkah-demi-langkah untuk merakit sistem **Smart AC-Humidifier** menggu
 
 | Komponen | Kegunaan | Jumlah |
 | :--- | :--- | :--- |
-| **Arduino Uno R3** | Otak utama sistem. | 1 |
+| **Arduino Uno** | Otak utama sistem. | 1 |
 | **Sensor DHT22** (Warna Putih) | Sensor suhu & kelembapan. | 1 |
 | **LCD 20x4 I2C Adapter** | Menampilkan status sistem. | 1 |
 | **Relay Module 1-Channel** | Saklar otomatis Humidifier. | 1 |

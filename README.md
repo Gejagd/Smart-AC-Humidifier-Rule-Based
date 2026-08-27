@@ -8,7 +8,7 @@
 
 ### "Smart climate choices for a smarter room."
 
-[📖 Baca Tutorial Perakitan Hardware](./TUTORIAL.md)
+[📖 Baca Tutorial Perakitan Hardware](docs/TUTORIAL.md)
 
 </div>
 
@@ -28,7 +28,7 @@ Sistem ini kini mendukung implementasi hardware nyata menggunakan Arduino/ESP32 
 - **Kabel Jumper & Breadboard**
 
 ### 📂 Hardware Files
-- [`hardware/Smart-AC_Humidifier_Arduino/`](./hardware/Smart-AC_Humidifier_Arduino/)
+- [`firmware/Smart-AC_Humidifier_Arduino/`](firmware/Smart-AC_Humidifier_Arduino_LCD.ino)
 - **`..._LCD.ino`**: Versi premium dengan dukungan LCD 20x4.
 - **`... .ino`**: Versi standar tanpa LCD.
 
@@ -64,8 +64,18 @@ Sistem ini kini mendukung implementasi hardware nyata menggunakan Arduino/ESP32 
 
 ### 1. Desktop (C++)
 ```bash
-g++ src/main.cpp src/smartdecision.cpp -Iinclude -o app
+g++ firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclude -o app
+```
+then to run it:    
+```bash
 ./app
+```
+  
+nb.  
+Use ```cd firmware/``` to make the path more shorter than this original path.  
+so it can be:  
+```bash
+g++ src/main.cpp src/smartdecision.cpp -Iinclude -o app && ./app
 ```
 
 ### 2. Hardware (Arduino IDE)
@@ -77,6 +87,6 @@ g++ src/main.cpp src/smartdecision.cpp -Iinclude -o app
 
 <div align="center">
 
-*Developed with ❤️ for learning C++ & Robotics*
+*Developed for learning & curiosity*
 
 </div>
