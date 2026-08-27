@@ -4,10 +4,6 @@
 
 **A Rule-Based Intelligent Decision System for Climate Control**
 
-[![C++](https://img.shields.io/badge/Language-C++-blue.svg)](https://isocpp.org/)
-[![Status](https://img.shields.io/badge/Status-Active-success.svg)](#)
-[![License](https://img.shields.io/badge/License-MIT-gray.svg)](#)
-
 ---
 
 ### "Smart climate choices for a smarter room."
