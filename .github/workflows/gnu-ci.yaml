@@ -20,9 +20,9 @@ jobs:
       - name: Compile Application
         run:  |
           mkdir -p bin
-          g++ -std=c++17 firmware/src/main.cpp firmware/src/smartdeciion.cpp -Iinclude -o bin/app
+          g++ -std=c++17 firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclude -o bin/app
 
       - name: Compile and Run Tests
         run:  |
-          g++ -std=c++17 firmware/unit_test/unit_test.cpp firmware/src/smartdecission.cpp -Iinclude -o bin/run_test
+          g++ -std=c++17 firmware/unit_test/unit_test.cpp firmware/src/smartdecision.cpp -Iinclude -o bin/run_test
           ./bin/run_test
