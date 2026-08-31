@@ -1,3 +1,8 @@
-.exe
-app.exe
-testapp.exe
+# Recompiled executeable programs
+**/*.exe
+
+# Any local environtment
+**/*.vscode
+**/*.env
+
+# etc
