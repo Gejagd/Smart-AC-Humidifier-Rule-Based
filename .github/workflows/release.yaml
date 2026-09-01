@@ -6,31 +6,31 @@ on:
       - 'v*.*.*'
       - 'v*.*.*-*'
     
-  jobs:
-    create-release:
-      runs-on: ubuntu-latest
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout Code
-          uses: actions/checkout@v4
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-        - name: Compile Executable
-          run:  |
-            mkdir -p build
-            g++ -03 -std=c++17 firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclue -o build/app
+      - name: Compile Executable
+        run:  |
+          mkdir -p build
+          g++ -03 -std=c++17 firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclue -o build/app
 
-        - name: Create Github Release
-          uses: softprops/action-gh-release@v2
-          with:
-            files:  build/app
-            name:   Release ${{ github.ref_name }}
+      - name: Create Github Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files:  build/app
+          name:   Release ${{ github.ref_name }}
 
-            prerelease: ${{ contains(github.ref_name, '-') }}
+          prerelease: ${{ contains(github.ref_name, '-') }}
 
-            body: |
-              ## Automated Release ${{ github.ref_name }}
-              
-              Executable program can be downloaded to try this version.
+          body: |
+            ## Automated Release ${{ github.ref_name }}
             
-          env:
-            GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
+            Executable program can be downloaded to try this version.
+          
+        env:
+          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
