@@ -17,7 +17,7 @@ jobs:
       - name: Compile Executable
         run:  |
           mkdir -p build
-          g++ -03 -std=c++17 firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclue -o build/app
+          g++ -O3 -std=c++17 firmware/src/main.cpp firmware/src/smartdecision.cpp -Iinclue -o build/app
 
       - name: Create Github Release
         uses: softprops/action-gh-release@v2
