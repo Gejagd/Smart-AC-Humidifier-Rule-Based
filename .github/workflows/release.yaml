@@ -33,4 +33,4 @@ jobs:
             Executable program can be downloaded to try this version.
           
         env:
-          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
